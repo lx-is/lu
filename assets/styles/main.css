@@ -148,6 +148,7 @@ ul.blog-posts li span {
     order: -1
 }
 
+/*
 @media (prefers-color-scheme:dark) {
     :root {
         --color-background: #000;
@@ -159,3 +160,4 @@ ul.blog-posts li span {
         --color-code-background: #1d1d1f
     }
 }
+*/
