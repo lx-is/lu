@@ -20,6 +20,8 @@ ignoreErrors = ["error-disable-taxonomy"]
 [permalinks]
 blog = "/p/:slug/"
 tags = "/p/:slug"
+writing = "/w/:slug/"
+tags = "/w/t/:slug"
 
 [params]
 # The "description" of your website. This is used in the meta data of your generated html.
