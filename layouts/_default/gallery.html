@@ -11,8 +11,10 @@
         {{ if ne $page.File.BaseFileName "index" }}
         <div class="photo">
             <img src="{{ $image }}" alt="{{ $description }}" loading="lazy">
-            <p class="camera-model">{{ $camera }}</p>
-            <p class="photo-date">{{ $date }}</p>
+            <div class="photo-data">
+                <p class="camera-model">{{ $camera }}</p>
+                <p class="photo-date">{{ $date }}</p>
+            </div>
         </div>
         {{ end }}
         {{ end }}

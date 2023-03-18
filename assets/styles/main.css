@@ -1,200 +1,161 @@
+:root {
+    --serif-font-family: 'Inter', sans-serif;
+    --monospace-font-family: 'Inconsolata', monospace;
+    --color-background: #fff;
+    --color-primary: #000;
+    --color-secondary: #6e6e73;
+    --color-accent-blue: #06c;
+    --color-accent-purple: #b0b;
+    --color-code-text: #000;
+    --color-code-background: #f5f5f7
+}
+
+* {
+    color: var(--color-primary)
+}
+
 body {
-    font-family: 'Inter', sans-serif;
-    margin: auto;
+    font-family: var(--serif-font-family);
+    margin: 0 auto;
     padding: 20px;
     max-width: 720px;
     text-align: left;
-    background-color: #fff;
+    background-color: var(--color-background);
     word-wrap: break-word;
-    overflow-wrap: break-word;
-    line-height: 1.5;
-    color: #444;
+    line-height: 1.5
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-strong,
-b {
-    color: #222;
+header h2 {
+    margin-bottom: .5rem
 }
 
-a {
-    color: #3273dc;
-    /*color: #ff5e6c;*/
+a,a:visited {
+    color: var(--color-accent-blue);
+    text-decoration: none
 }
 
-.title {
+a:hover {
+    text-decoration: underline
+}
+
+.title,.title span {
     text-decoration: none;
     border: 0;
-}
-
-.title span {
-    font-weight: 400;
+    font-weight: 400
 }
 
 nav a {
-    margin-right: 10px;
+    margin-right: 10px
 }
 
-textarea {
-    width: 100%;
+input,textarea {
     font-size: 16px;
-}
-
-input {
-    font-size: 16px;
+    width: 100%
 }
 
 content {
-    line-height: 1.6;
+    line-height: 1.6
 }
 
-table {
-    width: 100%;
-}
-
-img {
+img,table {
     max-width: 100%;
+    width: 100%
+}
+
+code,pre code {
+    font-family: var(--monospace-font-family);
+    border-radius: 15px
 }
 
 code {
     padding: 2px 5px;
-    background-color: #f2f2f2;
+    background-color: var(--color-code-background)
 }
 
 pre code {
-    color: #222;
+    color: var(--color-code-text);
     display: block;
     padding: 20px;
     white-space: pre-wrap;
     font-size: 14px;
-    overflow-x: auto;
+    overflow-x: auto
 }
 
-div.highlight pre {
+div.highlight code,div.highlight pre {
     background-color: initial;
-    color: initial;
+    color: initial
 }
 
-div.highlight code {
-    background-color: unset;
-    color: unset;
+blockquote,footer {
+    color: var(--color-secondary)
 }
 
 blockquote {
-    border-left: 1px solid #999;
-    color: #222;
+    border-left: 1px solid var(--color-secondary);
     padding-left: 20px;
-    font-style: italic;
+    font-style: italic
 }
 
 time {
-    font-family: 'Inconsolata', monospace;
+    font-family: "Inconsolata",monospace
 }
 
 footer {
+    font-size: 10px;
     padding: 25px;
-    text-align: center;
+    text-align: center
 }
 
-.helptext {
-    color: #777;
-    font-size: small;
-}
-
-.errorlist {
-    color: #eba613;
-    font-size: small;
-}
-
-/* blog posts */
 ul.blog-posts {
     list-style-type: none;
-    padding: unset;
+    padding: 0
 }
 
 ul.blog-posts li {
-    display: flex;
+    display: flex
 }
 
 ul.blog-posts li span {
-    flex: 0 0 100px;
-}
-
-ul.blog-posts li a:visited {
-    color: #8b6fcb;
+    flex: 0 0 100px
 }
 
 .photo-gallery {
     max-width: 576px;
-    margin: 0 auto;
+    margin: 0 auto
 }
 
 .photo {
-    padding: 32px 0 16px 0;
+    padding: 32px 0 16px
 }
 
-.photo .camera-model, .photo .photo-date  {
-    display: inline-block;
-    padding: 0;
-    margin: 0;
+.photo-data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
 
+.photo-data * {
+    margin: 0;
+    padding: 0
+}
+
+.photo-data .camera-model,.photo-data .photo-date {
     font-size: 14px;
-    font-family: 'Inconsolata', monospace;
+    font-family: "Inconsolata",monospace
 }
 
 .photo .camera-model {
-    float: left;
+    order: -1
 }
 
-.photo .photo-date {
-    float: right;
-}
-
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: #333;
-        color: #ddd;
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    strong,
-    b {
-        color: #eee;
-    }
-
-    a {
-        color: #8cc2dd;
-    }
-
-    code {
-        background-color: #777;
-    }
-
-    pre code {
-        color: #ddd;
-    }
-
-    blockquote {
-        color: #ccc;
-    }
-
-    textarea,
-    input {
-        background-color: #252525;
-        color: #ddd;
-    }
-
-    .helptext {
-        color: #aaa;
+@media (prefers-color-scheme:dark) {
+    :root {
+        --color-background: #000;
+        --color-primary: #fff;
+        --color-secondary: #86868b;
+        --color-accent-blue: #2997ff;
+        --color-accent-purple: #f14bf1;
+        --color-code-text: #fff;
+        --color-code-background: #333336
     }
 }
