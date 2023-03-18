@@ -1,0 +1,20 @@
+{{ define "main" }}
+    {{ $photoPages := where .Site.RegularPages "Section" "photos" }}
+    {{ $photoCount := len $photoPages }}
+    <div class="photo-gallery">
+        {{ range $i, $page := $photoPages }}
+        {{ $title := $page.Params.title }}
+        {{ $image := $page.Params.image }}
+        {{ $description := $page.Params.description }}
+        {{ $camera := $page.Params.camera }}
+        {{ $date := $page.Params.date.Format "January 2, 2006" }}
+        {{ if ne $page.File.BaseFileName "index" }}
+        <div class="photo">
+            <img src="{{ $image }}" alt="{{ $description }}" loading="lazy">
+            <p class="camera-model">{{ $camera }}</p>
+            <p class="photo-date">{{ $date }}</p>
+        </div>
+        {{ end }}
+        {{ end }}
+    </div>
+{{ end }}

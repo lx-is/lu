@@ -23,6 +23,11 @@ tags = "/p/:slug"
 writing = "/w/:slug/"
 tags = "/w/t/:slug"
 
+[collections]
+    [collections.photos]
+        output = "html"
+        identifier = "photos"
+
 [params]
 # The "description" of your website. This is used in the meta data of your generated html.
 description = "lx-is.lu is the personal site of lx-is, an internet user."

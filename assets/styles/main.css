@@ -125,6 +125,32 @@ ul.blog-posts li a:visited {
     color: #8b6fcb;
 }
 
+.photo-gallery {
+    padding-top: 16px;
+    max-width: 576px;
+    margin: 0 auto;
+}
+
+.photo {
+    padding: 32px 0 16px 0;
+}
+
+.photo .camera-model, .photo .photo-date  {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+
+    font-family: monospace;
+}
+
+.photo .camera-model {
+    float: left;
+}
+
+.photo .photo-date {
+    float: right;
+}
+
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #333;
