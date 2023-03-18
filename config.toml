@@ -6,7 +6,7 @@ baseURL = "https://lx-is.lu"
 theme = 'hugo-bearblog'
 
 # Basic metadata configuration for your blog.
-title = "lx-is ✦"
+title = "lx-is"
 author = "lx-is"
 copyright = "Copyright © 2023, lx-is.lu"
 languageCode = "en-US"
