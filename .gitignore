@@ -1,2 +1,15 @@
+# IntelliJ files
 .idea
+
+# macOS files
 .DS_Store
+
+# Hugo files
+/public/
+/resources/_gen/
+/assets/jsconfig.json
+hugo_stats.json
+hugo.exe
+hugo.darwin
+hugo.linux
+/.hugo_build.lock
