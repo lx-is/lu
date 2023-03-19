@@ -3,7 +3,7 @@
     {{ $photoPages := where .Site.RegularPages "Section" "photos" }}
     {{ $photoCount := len $photoPages }}
     <div class="photo-gallery">
-        {{ range $i, $page := $photoPages }}
+        {{ range $i, $page := $photoPages.Reverse }}
         {{ $title := $page.Params.title }}
         {{ $image := $page.Params.image }}
         {{ $description := $page.Params.description }}
