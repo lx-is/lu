@@ -1,4 +1,5 @@
 {{ define "main" }}
+    {{ .Content }}
     {{ $photoPages := where .Site.RegularPages "Section" "photos" }}
     {{ $photoCount := len $photoPages }}
     <div class="photo-gallery">
