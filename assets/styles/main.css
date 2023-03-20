@@ -92,7 +92,7 @@ div.highlight code,div.highlight pre {
     color: initial
 }
 
-blockquote,footer {
+blockquote,blockquote *:not(a),footer {
     color: var(--color-secondary)
 }
 
