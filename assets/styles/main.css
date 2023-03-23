@@ -14,12 +14,6 @@
     color: var(--color-primary)
 }
 
-body::-webkit-scrollbar {
-    display: none; /* Safari and Chrome */
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none /* Firefox */
-}
-
 body {
     font-family: var(--serif-font-family);
     margin: 0 auto;
