@@ -29,7 +29,6 @@ tags = "/w/t/:slug"
 [params]
 # The "description" of your website. This is used in the meta data of your generated html.
 description = "lx-is.lu is the personal site of lx-is, an internet user."
-altTitle = "lx-is"
 
 # The path to your "favicon". This should be a square (at least 32px x 32px) png-file.
 # Hint: It's good practise to also put a "favicon.ico"-file into your "static"-folder.
