@@ -1,7 +1,3 @@
-<a href="{{ "" | relURL }}">~/</a>
-{{ with .Site.GetPage "/writing" }}
-<a href="{{ "writing" | relURL }}">writing</a>
-{{ end }}
-{{ range .Site.Menus.main }}
+{{ range sort .Site.Menus.main "Weight" }}
 <a href="{{ .URL }}">{{ .Name }}</a>
 {{ end }}

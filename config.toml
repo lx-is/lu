@@ -21,6 +21,22 @@ ignoreErrors = ["error-disable-taxonomy"]
 writing = "/:year:month:day/:slug/"
 tags = "/t/:slug"
 
+[menu]
+    [[menu.main]]
+    name = "~/"
+    url = "/"
+    weight = 1
+
+    [[menu.main]]
+    name = "writing"
+    url = "/writing"
+    weight = 2
+
+    [[menu.main]]
+    name = "contact"
+    url = "/contact"
+    weight = 3
+
 [params]
 # The "description" of your website. This is used in the meta data of your generated html.
 description = "lx-is.lu is the personal site of lx-is, an internet user."
