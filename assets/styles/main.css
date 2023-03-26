@@ -144,8 +144,7 @@ ul.blog-posts li span {
 }
 */
 
-
-@media screen and (max-width: 200px) {
+@media screen and (max-width: 205px) {
     nav a {
         display: block;
     }
