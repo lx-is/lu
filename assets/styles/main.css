@@ -125,7 +125,7 @@ ul.blog-posts li span {
     flex: 0 0 100px
 }
 
-#socials > #div > dt > span {
+#socials > div > dt > span {
     font-style: italic
 }
 
