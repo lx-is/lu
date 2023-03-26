@@ -162,3 +162,9 @@ ul.blog-posts li span {
         display: block;
     }
 }
+
+@media print {
+    body {
+        padding: 0 20px
+    }
+}
