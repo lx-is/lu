@@ -18,8 +18,8 @@ enableRobotsTXT = true
 disableKinds = ["taxonomy"]
 ignoreErrors = ["error-disable-taxonomy"]
 [permalinks]
-writing = "/w/:slug/"
-tags = "/w/t/:slug"
+writing = "/:year:month:day/:slug/"
+tags = "/t/:slug"
 
 [collections]
     [collections.photos]
