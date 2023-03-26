@@ -22,6 +22,7 @@ html::-webkit-scrollbar {
 
 body {
     font-family: var(--serif-font-family);
+    font-size: 15px;
     margin: 0 auto;
     padding: 20px;
     max-width: 45em;
@@ -161,7 +162,7 @@ ul.blog-posts li span {
 }
 */
 
-@media screen and (max-width: 205px) {
+@media screen and (max-width: 200px) {
     nav a {
         display: block;
     }
