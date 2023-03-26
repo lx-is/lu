@@ -31,8 +31,17 @@ body {
     line-height: 1.5
 }
 
-header h2 {
+header h1 {
+    font-size: 24px;
     margin-bottom: .5rem
+}
+
+h2 {
+    margin-bottom: .5rem
+}
+
+p {
+    margin: 12px 0
 }
 
 a,a:visited {
@@ -124,6 +133,10 @@ ul.blog-posts li {
 
 ul.blog-posts li span {
     flex: 0 0 100px
+}
+
+#top-meta > h2 {
+    margin-bottom: 0
 }
 
 #socials > div > dt > span {
