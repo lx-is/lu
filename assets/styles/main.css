@@ -125,33 +125,8 @@ ul.blog-posts li span {
     flex: 0 0 100px
 }
 
-.photo-gallery {
-    max-width: 80%;
-    margin: 0 auto
-}
-
-.photo {
-    padding: 32px 0 16px
-}
-
-.photo-data {
-    display: flex;
-    justify-content: space-between;
-    align-items: center
-}
-
-.photo-data * {
-    margin: 0;
-    padding: 0
-}
-
-.photo-data .camera-model,.photo-data .photo-date {
-    font-size: 14px;
-    font-family: "Inconsolata",monospace
-}
-
-.photo .camera-model {
-    order: -1
+#socials li span {
+    margin-right: 0.25em;
 }
 
 /*
