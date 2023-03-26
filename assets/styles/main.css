@@ -135,6 +135,10 @@ ul.blog-posts li span {
     flex: 0 0 100px
 }
 
+#top-meta {
+    margin-bottom: 1.75rem
+}
+
 #top-meta > h2 {
     margin-bottom: 0
 }
