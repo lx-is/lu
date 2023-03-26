@@ -125,10 +125,6 @@ ul.blog-posts li span {
     flex: 0 0 100px
 }
 
-#socials li span {
-    margin-right: 0.25em;
-}
-
 /*
 @media (prefers-color-scheme:dark) {
     :root {
