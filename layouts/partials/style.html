@@ -1,3 +1,4 @@
 {{ $css := resources.Get "styles/main.css" }}
-{{ $style := $css | resources.Minify }}
-<link rel="stylesheet" href="{{ $style.Permalink }}">
+{{ $minifiedCSS := $css | resources.Minify }}
+{{ $fingerprintedCSS := $minifiedCSS | resources.Fingerprint "sha384" }}
+<link rel="stylesheet" href="{{ $fingerprintedCSS.Permalink }}" integrity="{{ $fingerprintedCSS.Data.Integrity }}" crossorigin="anonymous">
