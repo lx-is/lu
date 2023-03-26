@@ -1,20 +1,18 @@
 {{ define "main" }}
 {{ if eq .Type "writing" }}{{ if not .Params.menu }}
-<h1>{{ .Title }}</h1>
-<p>
-  <i>
+<div id="top-meta">
+    <h2>{{ .Title }}</h2>
     <time datetime='{{ .Date.Format "2006-01-02" }}' pubdate>
-      {{ .Date.Format (default "02 Jan, 2006" .Site.Params.dateFormat) }}
+        {{ .Date.Format (default "2006, January 03" .Site.Params.dateFormat) }}
     </time>
-  </i>
-</p>
+</div>
 {{ end }}{{ end }}
 <content>
-  {{ .Content }}
+    {{ .Content }}
 </content>
 <p>
-  {{ range (.GetTerms "tags") }}
-  <a href="{{ .Permalink }}">#{{ .LinkTitle }}</a>
-  {{ end }}
+    {{ range (.GetTerms "tags") }}
+    <a href="{{ .Permalink }}">#{{ .LinkTitle }}</a>
+    {{ end }}
 </p>
 {{ end }}
