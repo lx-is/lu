@@ -103,7 +103,8 @@ blockquote {
 }
 
 time {
-    font-family: "Inconsolata",monospace
+    font-family: "Inconsolata",monospace;
+    opacity: 80%;
 }
 
 footer {
