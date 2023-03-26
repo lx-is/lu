@@ -10,9 +10,11 @@
 <content>
     {{ .Content }}
 </content>
-<p id="tags">
-    {{ range (.GetTerms "tags") }}
-    <a href="{{ .Permalink }}">#{{ .LinkTitle }}</a>
-    {{ end }}
-</p>
+<small>
+    <p id="tags">
+        {{ range (.GetTerms "tags") }}
+        <a href="{{ .Permalink }}">#{{ .LinkTitle }}</a>
+        {{ end }}
+    </p>
+</small>
 {{ end }}
