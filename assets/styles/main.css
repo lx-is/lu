@@ -143,17 +143,6 @@ ul.blog-posts li span {
 }
 */
 
-@media screen and (max-width: 350px) {
-    .photo-data .camera-model,.photo-data .photo-date {
-        font-size: 12px;
-    }
-}
-
-@media screen and (max-width: 310px) {
-    .photo-data .camera-model,.photo-data .photo-date {
-        font-size: 10px;
-    }
-}
 
 @media screen and (max-width: 200px) {
     nav a {
