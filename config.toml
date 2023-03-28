@@ -18,7 +18,7 @@ enableRobotsTXT = true
 disableKinds = ["taxonomy"]
 ignoreErrors = ["error-disable-taxonomy"]
 [permalinks]
-writing = "/:year:month:day/:slug/"
+blog = "/:year:month:day/:slug/"
 tags = "/t/:slug"
 
 [menu]
@@ -28,8 +28,8 @@ tags = "/t/:slug"
     weight = 1
 
     [[menu.main]]
-    name = "writing"
-    url = "/writing"
+    name = "blog"
+    url = "/blog"
     weight = 2
 
     [[menu.main]]

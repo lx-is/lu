@@ -1,7 +1,7 @@
 ---
-title: "Music I've been listening to lately"
+title: "Some music I've been listening to"
 date: "2023-03-28"
-description: "Some of the music I've enjoyed listening to recently."
+description: "Some varied music I've enjoyed listening to recently."
 tags:
 - "music"
 ---
