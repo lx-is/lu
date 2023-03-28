@@ -87,6 +87,6 @@ Bamboo Moon (feat. THE LET'S GO's)
 
 For context, music is a relatively new experience for me. I really only got into regularly listening to music within the past year. I'm sure to most that sounds insane.
 
-I'd like to say my musical taste is eclectic. I listen to alternative, pop, ambient, electronic, lofi, and some rock and classical. As well, a lot of the music I listen to is outside my native language. I tend not to listen to hip-hop and I strongly dislike country.
+I'd like to say my musical taste is eclectic. I listen to alternative, pop, ambient, electronic, lofi, and some rock and classical. As well, a lot of the music I listen to is outside my native language. I tend not to listen to rap and I strongly dislike country.
 
 I hope you, whoever reading this, adds at least one of these songs to your playlist :)
