@@ -112,7 +112,7 @@ input,textarea {
     width: 100%
 }
 
-content {
+main {
     line-height: 1.6
 }
 
@@ -179,11 +179,12 @@ ul.blog-posts li span {
     flex: 0 0 100px
 }
 
-#top-meta {
-    margin-bottom: 1.5rem
+#post-info {
+    margin-bottom: 1.5rem;
+    line-height: 1.5
 }
 
-#top-meta > h2 {
+#post-info h2 {
     margin-bottom: 0
 }
 
@@ -193,6 +194,11 @@ ul.blog-posts li span {
 
 #filtering h3 {
     margin-bottom: 0
+}
+
+#tags {
+    font-size: smaller;
+    line-height: 1.5
 }
 
 /*

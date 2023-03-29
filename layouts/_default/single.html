@@ -1,20 +1,23 @@
 {{ define "main" }}
 {{ if eq .Type "blog" }}{{ if not .Params.menu }}
-<div id="top-meta">
-    <h2>{{ .Title }}</h2>
-    <time datetime='{{ .Date.Format "2006-01-02" }}' pubdate>
-        {{ .Date.Format (default "2006, January 02" .Site.Params.dateFormat) }}
-    </time>
-</div>
-{{ end }}{{ end }}
-<content>
+<article>
+    <section id="post-info">
+        <h2>{{ .Title }}</h2>
+        <time datetime='{{ .Date.Format "2006-01-02" }}' pubdate>
+            {{ .Date.Format (default "2006, January 02" .Site.Params.dateFormat) }}
+        </time>
+    </section>
+
     {{ .Content }}
-</content>
-<small>
-    <p id="tags">
+</article>
+<section id="tags">
+    <p>
         {{ range (.GetTerms "tags") }}
-        <a href="{{ .Permalink }}">#{{ .LinkTitle }}</a>
+        <a href="{{ .Permalink | relURL }}">#{{ .LinkTitle }}</a>
         {{ end }}
     </p>
-</small>
+</section>
+{{ end }}{{ else }}
+{{ .Content }}
+{{ end }}
 {{ end }}

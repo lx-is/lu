@@ -1,39 +1,37 @@
 {{ define "main" }}
-<content>
-    {{ .Content }}
-    {{ if .Data.Singular }}
-    <div id="filtering">
-        <h3>Filtering for "{{ .Title }}"</h3>
-        <small>
-            <a href="{{ "blog" | relURL }}">Remove filter</a>
-        </small>
-    </div>
-    {{ end }}
-    <ul class="blog-posts">
-        {{ range .Pages }}
-        <li>
-      <span>
-        <time datetime='{{ .Date.Format "2006-01-02" }}' pubdate>
-          {{ .Date.Format (default "2006/01/02" .Site.Params.dateFormat) }}
-        </time>
-      </span>
-            <a href="{{ .Permalink | relURL }}">{{ .Title }}</a>
-        </li>
-        {{ else }}
-        <li>
-            No posts yet
-        </li>
-        {{ end }}
-    </ul>
-    {{ if .Data.Singular }}
-    {{else}}
+{{ .Content }}
+{{ if .Data.Singular }}
+<div id="filtering">
+    <h3>Filtering for "{{ .Title }}"</h3>
     <small>
-        <div id="tags">
-            {{ range .Site.Taxonomies.tags }}
-            <a href="{{ .Page.Permalink | relURL }}">#{{ .Page.Title }}</a>&nbsp;
-            {{ end }}
-        </div>
+        <a href="{{ "blog" | relURL }}">Remove filter</a>
     </small>
+</div>
+{{ end }}
+<ul class="blog-posts">
+    {{ range .Pages }}
+    <li>
+  <span>
+    <time datetime='{{ .Date.Format "2006-01-02" }}' pubdate>
+      {{ .Date.Format (default "2006/01/02" .Site.Params.dateFormat) }}
+    </time>
+  </span>
+        <a href="{{ .Permalink | relURL }}">{{ .Title }}</a>
+    </li>
+    {{ else }}
+    <li>
+        No posts yet
+    </li>
     {{ end }}
-</content>
+</ul>
+{{ if .Data.Singular }}
+{{else}}
+<section id="tags">
+    <p>
+        {{ range .Site.Taxonomies.tags }}
+        <a href="{{ .Page.Permalink | relURL }}">#{{ .Page.Title }}</a>&nbsp;
+        {{ end }}
+    </p>
+</section>
+{{ end }}
 {{ end }}
