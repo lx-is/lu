@@ -4,13 +4,13 @@
 <div id="filtering">
     <h3>Filtering for "{{ .Title }}"</h3>
     <small>
-        <a href="{{ "blog" | relURL }}">Remove filter</a> · <a href="{{ .Permalink | relURL }}/index.xml">RSS</a>
+        <a href="{{ "blog" | relURL }}">Remove filter</a> · <a type="application/rss+xml" href="{{ .Permalink | relURL }}/index.xml">RSS</a>
     </small>
 </div>
 {{ else }}
 <div id="rss">
     <p>
-        <a href="{{ "blog" | relURL }}/index.xml">rss</a>
+        <a type="application/rss+xml" href="{{ "blog" | relURL }}/index.xml">rss</a>
     </p>
 </div>
 {{ end }}
