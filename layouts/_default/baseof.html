@@ -10,9 +10,11 @@
         {{- partial "seo_tags.html" . -}}
         <meta name="referrer" content="no-referrer-when-downgrade" />
 
-        {{ with .OutputFormats.Get "rss" -}}
+        {{ if or (eq .Kind "taxonomy") (and (eq .Kind "section") (eq .Section "blog")) }}
+        {{ with .OutputFormats.Get "rss" }}
         {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
-        {{ end -}}
+        {{ end }}
+        {{ end }}
 
         {{- partial "fonts.html" . -}}
         {{- partial "style.html" . -}}
