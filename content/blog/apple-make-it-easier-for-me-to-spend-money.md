@@ -26,4 +26,4 @@ This entire ordeal left me feeling dumbfounded, and it's not even the first time
 
 \</rant\>
 
-Unrelated (sort of), when removing a review in the Mac App Store, a \<span> tag is shown. The Mac App Store is so [polished](https://cdn.lx-is.lu/static/8TkL3PBG.webp) ✨
+Unrelated (sort of), when removing a review in the Mac App Store, a \<span> tag is shown. The Mac App Store is so [polished](https://pond.lx-is.lu/static/kxkxdoi1XftbBgncDvK3.webp) ✨
