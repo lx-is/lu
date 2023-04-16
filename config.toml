@@ -51,6 +51,7 @@ socials = [
     {platform = "email", username= "7@lx-is.lu", url = "mailto:7@lx-is.lu"},
     {platform = "discord", username = "lx-is#6699", url = "https://discord.com/users/1074633351908053033"},
     {platform = "twitter", username = "@lx__is", url = "https://twitter.com/lx__is"},
+    {platform = "bluesky", username = "@lx-is.lu", url = "https://staging.bsky.app/profile/lx-is.lu"},
     {platform = "github", username = "lx-is", url = "https://github.com/lx-is"}
 ]
 
