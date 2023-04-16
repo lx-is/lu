@@ -65,8 +65,8 @@
 }
 
 :root {
-    --serif-font-family: 'Averia Serif Libre', sans-serif;
-    --monospace-font-family: 'Courier Prime', monospace;
+    --serif-font-family: 'Averia Serif Libre', 'Georgia', 'Times New Roman', serif;
+    --monospace-font-family: 'Courier Prime', 'Courier New', 'Courier', monospace;
     --color-background: #f4f8f3;
     --color-primary: #295670;
     --color-secondary: #6e6e73;
