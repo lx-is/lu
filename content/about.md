@@ -3,7 +3,9 @@ title: "about"
 description: "information on lx-is.lu."
 ---
 
-this is my personal website. i blog into the public void. source available at [lx-is/lu](https://github.com/lx-is/lu).
+this is my personal website. i blog into the public void.
+
+*source available at [lx-is/lu](https://github.com/lx-is/lu).*
 
 ### infrequently asked questions
 
