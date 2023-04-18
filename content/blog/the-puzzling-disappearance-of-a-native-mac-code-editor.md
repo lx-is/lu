@@ -15,7 +15,7 @@ I tried searching for the site, but there were no results other than a [Y Combin
 
 The most recent capture of the site, [March 1, 2023](https://web.archive.org/web/20230301033702/https://www.zeditor.app/), features a `DEPLOYMENT_NOT_FOUND` Vercel error. It is on the [April 28, 2022](https://web.archive.org/web/20220428110453/https://www.zeditor.app/) capture that the site's latest available information is accessible.
 
-Zas Editor (zeditor.app) proposes itself as essentially a Mac native editor built with Go and Rust and a Xcode-like frontend.
+Zas Editor (zeditor.app) proposes itself essentially as a Mac native editor built with Go and Rust with a Xcode-like frontend.
 
 On paper, both Zed and Zas editor look similar: the use of Rust, the claims of high performance, and the initial Mac focus. However, I don't think there's any correlation; Zas Editor didn't silently transform into Zed.
 
