@@ -67,10 +67,10 @@
 :root {
     --serif-font-family: 'Averia Serif Libre', 'Georgia', 'Times New Roman', serif;
     --monospace-font-family: 'Courier Prime', 'Courier New', 'Courier', monospace;
-    --color-background: #f4f8f3;
-    --color-primary: #295670;
+    --color-background: #f7faf5;
+    --color-primary: #52483a;
     --color-secondary: #6e6e73;
-    --color-accent-bluer: #377395;
+    --color-accent: rgba(82, 72, 58, 0.69);
     --color-accent-purple: #b0b;
     --color-code-text: #000;
 }
@@ -195,7 +195,7 @@ blockquote {
 
 time {
     font-family: var(--monospace-font-family);
-    color: var(--color-accent-bluer);
+    color: var(--color-accent);
     font-size: 14px;
     letter-spacing: -0.05em;
 }
