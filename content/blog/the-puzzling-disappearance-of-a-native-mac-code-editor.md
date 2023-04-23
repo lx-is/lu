@@ -4,7 +4,6 @@ date: "2023-04-18"
 description: "Zas Editor, a proclaimed high performant, native code editor for macOS mysteriously vanished. What happened?"
 tags:
 - "macOS"
-- "miscellaneous"
 ---
 
 A new code editor has been making waves recently — [Zed](https://zed.dev/). Zed describes itself as a, "high-performance, multiplayer code editor from the creators of Atom and Tree-sitter."
