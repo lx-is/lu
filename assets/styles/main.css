@@ -40,6 +40,7 @@
     --color-lighter: rgba(40, 40, 42, 0.77);
     --color-accent: #c2e7fe;
     --color-code-text: #28282a;
+    --color-code-bg: #f4f6fc;
 }
 
 * {
@@ -130,18 +131,18 @@ img,table {
 
 code,pre code {
     font-family: var(--font-family-mono);
-    color: rgba(0, 0, 16, 0.88);
+    color: var(--color-code-text);
     border-radius: 15px;
     font-size: 88%;
 }
 
 code {
     padding: 2px 5px;
-    background-color: rgba(194, 231, 254, 0.25);
+    background-color: var(--color-code-bg);
 }
 
 pre code {
-    color: rgba(0, 16, 0, 0.88);
+    color: var(--color-code-text);
     display: block;
     padding: 20px;
     white-space: pre-wrap;
