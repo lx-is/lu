@@ -19,4 +19,4 @@ lx-is.lu is hosted with cloudflare which may review some technical data such as 
 
 ### credits
 
-this site is built with [hugo](https://gohugo.io/) on top of the [hugo-bearblog](https://github.com/janraasch/hugo-bearblog) theme; styling inspired by [emilyliu.me](https://www.emilyliu.me/).
+this site is built with [hugo](https://gohugo.io/) on top of the [hugo-bearblog](https://github.com/janraasch/hugo-bearblog) theme.
