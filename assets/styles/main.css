@@ -1,78 +1,46 @@
-/* averia-serif-libre-300 - latin */
+/* inter-regular - latin */
 @font-face {
     font-display: swap;
-    font-family: 'Averia Serif Libre';
-    font-style: normal;
-    font-weight: 300;
-    src: url('/fonts/averia-serif-libre-v16-latin-300.woff2') format('woff2');
-}
-/* averia-serif-libre-300italic - latin */
-@font-face {
-    font-display: swap;
-    font-family: 'Averia Serif Libre';
-    font-style: italic;
-    font-weight: 300;
-    src: url('/fonts/averia-serif-libre-v16-latin-300italic.woff2') format('woff2');
-}
-/* averia-serif-libre-regular - latin */
-@font-face {
-    font-display: swap;
-    font-family: 'Averia Serif Libre';
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    src: url('/fonts/averia-serif-libre-v16-latin-regular.woff2') format('woff2');
+    src: url('/fonts/inter-v12-latin-regular.woff2') format('woff2')
 }
-/* averia-serif-libre-italic - latin */
+/* inter-600 - latin */
 @font-face {
     font-display: swap;
-    font-family: 'Averia Serif Libre';
-    font-style: italic;
-    font-weight: 400;
-    src: url('/fonts/averia-serif-libre-v16-latin-italic.woff2') format('woff2');
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    src: url('/fonts/inter-v12-latin-600.woff2') format('woff2')
 }
-/* averia-serif-libre-700 - latin */
+/* inter-700 - latin */
 @font-face {
     font-display: swap;
-    font-family: 'Averia Serif Libre';
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    src: url('/fonts/averia-serif-libre-v16-latin-700.woff2') format('woff2');
-}
-/* averia-serif-libre-700italic - latin */
-@font-face {
-    font-display: swap;
-    font-family: 'Averia Serif Libre';
-    font-style: italic;
-    font-weight: 700;
-    src: url('/fonts/averia-serif-libre-v16-latin-700italic.woff2') format('woff2');
+    src: url('/fonts/inter-v12-latin-700.woff2') format('woff2')
 }
 
-/* courier-prime-regular - latin */
+/* inconsolata-regular - latin */
 @font-face {
     font-display: swap;
-    font-family: 'Courier Prime';
+    font-family: 'Inconsolata';
     font-style: normal;
     font-weight: 400;
-    src: url('/fonts/courier-prime-v7-latin-regular.woff2') format('woff2');
-}
-/* courier-prime-italic - latin */
-@font-face {
-    font-display: swap;
-    font-family: 'Courier Prime';
-    font-style: italic;
-    font-weight: 400;
-    src: url('/fonts/courier-prime-v7-latin-italic.woff2') format('woff2');
+    src: url('/fonts/inconsolata-v31-latin-regular.woff2') format('woff2')
 }
 
 :root {
-    --serif-font-family: 'Averia Serif Libre', 'Georgia', 'Times New Roman', serif;
-    --monospace-font-family: 'Courier Prime', 'Courier New', 'Courier', monospace;
-    --color-background: #f7faf5;
-    --color-primary: #52483a;
-    --color-secondary: #6e6e73;
-    --color-accent: rgba(82, 72, 58, 0.69);
-    --color-accent-purple: #b0b;
-    --color-code-text: #000;
+    --font-family-sans: 'Inter', sans-serif;
+    --font-family-mono: 'Inconsolata', monospace;
+    --color-background: #fff;
+    --color-primary: #28282a;
+    --color-lighter: rgba(40, 40, 42, 0.77);
+    --color-accent: #c2e7fe;
+    --color-code-text: #28282a;
+    --color-code-bg: #f4f6fc;
 }
 
 * {
@@ -86,7 +54,7 @@ html::-webkit-scrollbar {
 }
 
 body {
-    font-family: var(--serif-font-family);
+    font-family: var(--font-family-sans);
     font-weight: 300;
     font-size: 15px;
     margin: 0 auto;
@@ -103,10 +71,17 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 header {
-    font-weight: 400;
+    font-weight: 300;
+}
+
+header svg {
+    display: inline;
+    width: 21px;
+    margin-right: .333rem;
 }
 
 header h1 {
+    display: inline-block;
     font-weight: 700;
     font-size: 24px;
     margin-bottom: .5rem
@@ -126,11 +101,8 @@ p {
 
 a,a:visited {
     color: var(--color-primary);
-    text-decoration: underline
-}
-
-a:hover {
-    text-decoration: underline
+    text-decoration: underline;
+    text-decoration-color: var(--color-accent);
 }
 
 .title,.title span {
@@ -158,19 +130,19 @@ img,table {
 }
 
 code,pre code {
-    font-family: var(--monospace-font-family);
-    color: rgba(0, 16, 0, 0.88);
+    font-family: var(--font-family-mono);
+    color: var(--color-code-text);
     border-radius: 15px;
     font-size: 88%;
 }
 
 code {
     padding: 2px 5px;
-    background-color: rgba(0, 16, 0, 0.12);
+    background-color: var(--color-code-bg);
 }
 
 pre code {
-    color: rgba(0, 16, 0, 0.88);
+    color: var(--color-code-text);
     display: block;
     padding: 20px;
     white-space: pre-wrap;
@@ -184,18 +156,18 @@ div.highlight code,div.highlight pre {
 }
 
 blockquote,blockquote *:not(a),footer {
-    color: rgba(0, 16, 0, 0.50);
+    color: var(--color-lighter);
 }
 
 blockquote {
-    border-left: 1px solid rgba(0, 16, 0, 0.50);;
+    border-left: 1px solid var(--color-accent);;
     padding-left: 20px;
     font-style: italic
 }
 
 time {
-    font-family: var(--monospace-font-family);
-    color: var(--color-accent);
+    font-family: var(--font-family-mono);
+    color: var(--color-lighter);
     font-size: 14px;
     letter-spacing: -0.05em;
 }
@@ -261,20 +233,6 @@ small {
 #rss p {
     margin-bottom: 0
 }
-
-/*
-@media (prefers-color-scheme:dark) {
-    :root {
-        --color-background: #000;
-        --color-primary: #fff;
-        --color-secondary: #86868b;
-        --color-accent-blue: #2997ff;
-        --color-accent-purple: #f14bf1;
-        --color-code-text: #fff;
-        --color-code-background: #1d1d1f
-    }
-}
-*/
 
 @media screen and (max-width: 250px) {
     nav a {
