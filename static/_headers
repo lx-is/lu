@@ -6,7 +6,7 @@
   X-Frame-Options : DENY
   X-XSS-Protection : 0
   Permissions-Policy : accelerometer=(), ambient-light-sensor=(), autoplay=(), battery=(), camera=(), clipboard-read=(), display-capture=(), document-domain=(), encrypted-media=(), fullscreen=(), geolocation=(), gyroscope=(), hid=(), idle-detection=(), interest-cohort=(), magnetometer=(), microphone=(), midi=(), payment=(), picture-in-picture=(), publickey-credentials-get=(), screen-wake-lock=(), serial=(), usb=(), sync-xhr=(), xr-spatial-tracking=()
-  Cross-Origin-Resource-Policy : same-origin
+  Cross-Origin-Resource-Policy : same-site
   Cross-Origin-Embedder-Policy : require-corp
   Cross-Origin-Opener-Policy : same-origin
   Feature-Policy: accelerometer 'none'; camera 'none'; geolocation 'none'; gyroscope 'none'; magnetometer 'none'; microphone 'none'; payment 'none'; usb 'none'
