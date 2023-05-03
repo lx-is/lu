@@ -16,7 +16,7 @@ A recent personal favorite song of mine is "Nevermind" by Presley Regier. While 
 
 So, I changed the cover to something I felt was more fitting: an upscaled and cropped screenshot from one of the first frames of the music video.
 
-![A before/after comparison of "Nevermind" cover art.](https://pond.lx-is.lu/static/TFzEskvwnrZ9Yadw7cPE.webp)
+![A before/after comparison of "Nevermind" cover art.](/blog/static/am-ca-c.webp)
 
 I think the end result is perfect ✨
 
