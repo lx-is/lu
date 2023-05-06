@@ -1,46 +1,12 @@
-/* inter-regular - latin */
-@font-face {
-    font-display: swap;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    src: url('/fonts/inter-v12-latin-regular.woff2') format('woff2')
-}
-/* inter-600 - latin */
-@font-face {
-    font-display: swap;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    src: url('/fonts/inter-v12-latin-600.woff2') format('woff2')
-}
-/* inter-700 - latin */
-@font-face {
-    font-display: swap;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    src: url('/fonts/inter-v12-latin-700.woff2') format('woff2')
-}
-
-/* inconsolata-regular - latin */
-@font-face {
-    font-display: swap;
-    font-family: 'Inconsolata';
-    font-style: normal;
-    font-weight: 400;
-    src: url('/fonts/inconsolata-v31-latin-regular.woff2') format('woff2')
-}
-
 :root {
-    --font-family-sans: 'Inter', sans-serif;
-    --font-family-mono: 'Inconsolata', monospace;
-    --color-background: #fff;
-    --color-primary: #28282a;
-    --color-lighter: rgba(40, 40, 42, 0.77);
-    --color-accent: #c2e7fe;
-    --color-code-text: #28282a;
-    --color-code-bg: #f4f6fc;
+    --font-family-sans: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+    --font-family-mono: 'Courier New', 'Courier Prime', 'Courier', monospace;
+    --color-background: #f0f0f0;
+    --color-primary: #1d1d1f;
+    --color-lighter: #515154;
+    --color-accent: #06c;
+    --color-code-text: #1d1d1f;
+    --color-code-bg: #f5f5f7;
 }
 
 * {
@@ -100,9 +66,12 @@ p {
 }
 
 a,a:visited {
-    color: var(--color-primary);
-    text-decoration: underline;
-    text-decoration-color: var(--color-accent);
+    color: var(--color-accent);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline
 }
 
 .title,.title span {
@@ -160,7 +129,7 @@ blockquote,blockquote *:not(a),footer {
 }
 
 blockquote {
-    border-left: 1px solid var(--color-accent);;
+    border-left: 1px solid var(--color-primary);;
     padding-left: 20px;
     font-style: italic
 }
