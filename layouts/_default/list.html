@@ -2,7 +2,7 @@
 {{ .Content }}
 {{ if .Data.Singular }}
 <div id="filtering">
-    <h3>Filtering for "{{ .Title }}"</h3>
+    <h2 class="h2ash3">Filtering for "{{ .Title }}"</h2>
     <small>
         <a href="{{ "blog" | relURL }}">Remove filter</a> · <a type="application/rss+xml" href="{{ .Permalink | relURL }}index.xml">RSS</a>
     </small>

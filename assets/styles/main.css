@@ -61,6 +61,11 @@ h3 {
     margin: 0.9em 0
 }
 
+.h2ash3 {
+    margin: .9em 0;
+    font-size: 1.17em;
+}
+
 p {
     margin: 12px 0
 }
