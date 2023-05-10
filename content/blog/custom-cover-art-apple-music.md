@@ -22,6 +22,8 @@ I think the end result is perfect ✨
 
 ### How to do it
 
+You can sometimes find suitable cover art from [MusicBrainz](https://musicbrainz.org/), or you can make your own like I did with "Nevermind."
+
 Once you have a 1x1 image you'd like to use, it's pretty simple to apply (Apple recommends an image of 4000x4000, but a lower resolution is perfectly fine).
 
 1. In the Music app on macOS, open the song/album that you'd like to change in your library (don't open it from search/discovery).
